@@ -28,7 +28,7 @@ function Sign({ position, rotation = 0, title, subtitle, width = 3.2 }: { positi
   return <group position={position} rotation={[0, rotation, 0]}>
     <Part surface="bronze" position={[0, -0.92, 0]} scale={[0.06, 1.84, 0.06]} />
     <Part surface="metal" position={[0, 0, -0.04]} scale={[width + 0.1, width / 4 + 0.1, 0.08]} />
-    <mesh><planeGeometry args={[width, width / 4]} /><meshStandardMaterial map={texture} emissive="#a4bfad" emissiveMap={texture} emissiveIntensity={0.28} roughness={0.5} /></mesh>
+    <mesh position={[0, 0, 0.012]}><planeGeometry args={[width, width / 4]} /><meshStandardMaterial map={texture} emissive="#a4bfad" emissiveMap={texture} emissiveIntensity={0.28} roughness={0.5} /></mesh>
   </group>
 }
 

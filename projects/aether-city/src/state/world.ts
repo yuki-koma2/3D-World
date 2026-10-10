@@ -5,7 +5,7 @@ interface WorldState {
   mode: 'orbit' | 'walk'
   walkActive: boolean
   walkReady: boolean
-  dragLook: boolean
+  walkMessage: string
   view: View
   time: number
   light: number
@@ -25,9 +25,9 @@ interface WorldState {
 }
 
 export const useWorld = create<WorldState>((set) => ({
-  mode: 'orbit', walkActive: false, walkReady: false, dragLook: false, view: 'city', time: 0.23, light: 1.0, fog: 0.42,
+  mode: 'orbit', walkActive: false, walkReady: false, walkMessage: '道路・広場・橋をクリックして移動', view: 'city', time: 0.23, light: 1.0, fog: 0.42,
   quality: 'balanced', renderDpr: Math.min(devicePixelRatio, 1.25), autoQuality: true, timeFlow: false, resetId: 0,
-  setMode: (mode) => set((s) => ({ mode, walkActive: false, dragLook: false, resetId: s.resetId + 1 })),
+  setMode: (mode) => set((s) => ({ mode, walkActive: mode === 'walk', resetId: s.resetId + 1 })),
   setView: (view) => set((s) => ({ view, resetId: s.resetId + 1 })),
   setTime: (time) => set({ time: Math.max(0, Math.min(1, time)) }),
   setLight: (light) => set({ light: Math.max(0.2, Math.min(2, light)) }),
@@ -35,16 +35,3 @@ export const useWorld = create<WorldState>((set) => ({
   setQuality: (quality) => set({ quality, renderDpr: Math.min(devicePixelRatio, QUALITY[quality].dpr) }),
   reset: () => set((s) => ({ resetId: s.resetId + 1 })),
 }))
-
-export function startWalking() {
-  const canvas = document.querySelector('canvas')
-  if (!canvas) return
-  canvas.tabIndex = 0
-  canvas.focus()
-  const fallback = () => { if (useWorld.getState().mode === 'walk') useWorld.setState({ walkActive: true, dragLook: true }) }
-  try {
-    if (!canvas.requestPointerLock) { fallback(); return }
-    const result = canvas.requestPointerLock()
-    result?.catch(fallback)
-  } catch { fallback() }
-}

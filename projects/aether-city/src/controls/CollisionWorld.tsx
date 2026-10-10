@@ -1,9 +1,14 @@
 import { CuboidCollider, CylinderCollider, RigidBody } from '@react-three/rapier'
-import { BRIDGES, BRIDGE_FLOOR, ISLANDS, bridgeTransform } from '../lib/world'
+import { BRIDGES, BRIDGE_FLOOR, GARDEN_RAMP, ISLANDS, bridgeTransform } from '../lib/world'
 
 export function CollisionWorld() {
   return <RigidBody type="fixed" colliders={false} friction={0.8}>
     {ISLANDS.map(({ id, position, radius }) => <CylinderCollider key={id} args={[0.5, radius]} position={[position[0], -0.5, position[2]]} />)}
+    {/* Raised garden paving and terrace deck use the same heights as their meshes. */}
+    <CuboidCollider args={[GARDEN_RAMP.scale[0] / 2, 0.04, 1.85]} position={GARDEN_RAMP.position} rotation={GARDEN_RAMP.rotation} />
+    <CuboidCollider args={[9.25, 0.08, 1.85]} position={[-43, 0.18, -11]} />
+    <CuboidCollider args={[1.85, 0.08, 6.75]} position={[-41, 0.18, -17.5]} />
+    <CylinderCollider args={[0.055, 9.6]} position={[49, 0.055, 7]} />
     {BRIDGES.map((b, i) => {
       const { position, length, angle } = bridgeTransform(b.start, b.end)
       return <group key={i} position={position} rotation={[0, angle, 0]}>

@@ -29,6 +29,13 @@ export const BRIDGES = [
 ]
 // Six-centimetre lip clears island paving and perimeter trim without a visible depth conflict.
 export const BRIDGE_FLOOR = 0.065
+// A short approach joins the bridge to the garden paving at 0.26m.
+const gardenRampAngle = -Math.atan(0.26 - BRIDGE_FLOOR)
+export const GARDEN_RAMP = {
+  position: [-33.25, (0.26 + BRIDGE_FLOOR) / 2 - 0.04 * Math.cos(gardenRampAngle), -11] as Vec3,
+  rotation: [0, 0, gardenRampAngle] as Vec3,
+  scale: [Math.hypot(1, 0.26 - BRIDGE_FLOOR), 0.08, 3.7] as Vec3,
+}
 
 export const VIEWS: Record<View, { position: Vec3; target: Vec3; label: string; short: string; walk: Vec3; fov: number }> = {
   city: { position: [89, 49, 104], target: [2, 15, -10], label: '都市全景', short: '雲の上の、もうひとつの世界。', walk: [0, 2.2, 18], fov: 43 },
@@ -59,6 +66,8 @@ export const telemetry = {
   player: [0, 0, 0] as Vec3, drones: [0, 0, 0] as Vec3,
   grounded: false, locked: false, respawns: 0, qualityChanges: 0,
   time: 0.23,
+  floorHit: [0, 0, 0] as Vec3, navigation: '待機', target: [0, 0] as [number, number], waypoints: 0,
+  routeRequests: 0, arrivals: 0, yaw: 0, pitch: 0,
 }
 
 export const benchmark = {

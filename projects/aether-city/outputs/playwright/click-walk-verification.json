@@ -1,0 +1,79 @@
+{
+  "browser": "Codex内部ブラウザ",
+  "date": "2026-10-10",
+  "conditions": "1920x1080, Apple M3 Pro, balanced, DPR1",
+  "observations": [
+    {
+      "test": "初期Walk",
+      "text": "FPS: 61\nFrame: 16.51 ms\nDraw calls: 306\nTriangles: 309277\nDPR: 1.00\nViewport: 1920 × 1080\nMode: walk\nCamera: 0.00, 1.54, 18.00\nPlayer: 0.00, 0.85, 18.00\nGrounded: true\nPointer lock: false\nWalking: true\nNavigation: 待機\nTarget: 0.00, 0.00\nWaypoints: 0\nRoutes: 0 / Arrivals: 0\nLook: -0.071, 0.035\nRespawns: 1\nFrames: 861\nDrone: 25.69, 14.97, 9.63\nAuto quality: 0\nRenderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)"
+    },
+    {
+      "test": "道路クリック到着",
+      "text": "FPS: 60\nFrame: 16.68 ms\nDraw calls: 266\nTriangles: 287811\nDPR: 1.00\nViewport: 1920 × 1080\nMode: walk\nCamera: 0.38, 1.54, 11.69\nPlayer: 0.38, 0.85, 11.69\nGrounded: true\nPointer lock: false\nWalking: true\nNavigation: 到着\nTarget: 0.38, 11.58\nWaypoints: 0\nRoutes: 1 / Arrivals: 1\nLook: -0.071, 0.035\nRespawns: 1\nFrames: 1128\nDrone: 17.40, 14.88, 12.37\nAuto quality: 0\nRenderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)"
+    },
+    {
+      "test": "右下ドラッグ・クリック誤発火なし",
+      "text": "FPS: 60\nFrame: 16.67 ms\nDraw calls: 321\nTriangles: 327397\nDPR: 1.00\nViewport: 1920 × 1080\nMode: walk\nCamera: 0.38, 1.54, 11.69\nPlayer: 0.38, 0.85, 11.69\nGrounded: true\nPointer lock: false\nWalking: true\nNavigation: 到着\nTarget: 0.38, 11.58\nWaypoints: 0\nRoutes: 1 / Arrivals: 1\nLook: 0.379, 0.185\nRespawns: 1\nFrames: 1548\nDrone: 3.03, 13.69, 13.32\nAuto quality: 0\nRenderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)"
+    },
+    {
+      "test": "建物・空のクリック拒否",
+      "text": "FPS: 60\nFrame: 16.67 ms\nDraw calls: 337\nTriangles: 333889\nDPR: 1.00\nViewport: 1920 × 1080\nMode: walk\nCamera: 0.38, 1.54, 11.69\nPlayer: 0.38, 0.85, 11.69\nGrounded: true\nPointer lock: false\nWalking: true\nNavigation: 到着\nTarget: 0.38, 11.58\nWaypoints: 0\nRoutes: 1 / Arrivals: 1\nLook: 0.379, 0.185\nRespawns: 1\nFrames: 2255\nDrone: -18.14, 10.38, 5.67\nAuto quality: 0\nRenderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)"
+    },
+    {
+      "test": "広場クリック到着",
+      "text": "FPS: 60\nFrame: 16.69 ms\nDraw calls: 427\nTriangles: 376687\nDPR: 1.00\nViewport: 1920 × 1080\nMode: walk\nCamera: 46.31, 1.54, 8.00\nPlayer: 46.31, 0.85, 8.00\nGrounded: true\nPointer lock: false\nWalking: true\nNavigation: 到着\nTarget: 46.22, 7.93\nWaypoints: 0\nRoutes: 2 / Arrivals: 2\nLook: 1.166, 0.035\nRespawns: 2\nFrames: 3365\nDrone: -20.52, 9.92, -17.45\nAuto quality: 0\nRenderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)"
+    },
+    {
+      "test": "展望台から橋へクリック移動",
+      "text": "FPS: 60\nFrame: 16.67 ms\nDraw calls: 388\nTriangles: 357927\nDPR: 1.00\nViewport: 1920 × 1080\nMode: walk\nCamera: 33.40, 1.60, 5.78\nPlayer: 33.40, 0.91, 5.78\nGrounded: true\nPointer lock: false\nWalking: true\nNavigation: 到着\nTarget: 33.29, 5.76\nWaypoints: 0\nRoutes: 3 / Arrivals: 3\nLook: 1.166, 0.035\nRespawns: 2\nFrames: 4834\nDrone: 23.92, 15.00, -24.38\nAuto quality: 0\nRenderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)"
+    },
+    {
+      "test": "橋から中央島へ到着",
+      "text": "FPS: 60\nFrame: 16.67 ms\nDraw calls: 313\nTriangles: 323981\nDPR: 1.00\nViewport: 1920 × 1080\nMode: walk\nCamera: 13.50, 1.54, 1.66\nPlayer: 13.50, 0.85, 1.66\nGrounded: true\nPointer lock: false\nWalking: true\nNavigation: 到着\nTarget: 13.39, 1.64\nWaypoints: 0\nRoutes: 4 / Arrivals: 4\nLook: 1.166, 0.035\nRespawns: 2\nFrames: 6601\nDrone: 26.80, 9.07, 9.09\nAuto quality: 0\nRenderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)"
+    },
+    {
+      "test": "目的地変更・ESC停止",
+      "text": "FPS: 60\nFrame: 16.67 ms\nDraw calls: 316\nTriangles: 312861\nDPR: 1.00\nViewport: 1920 × 1080\nMode: walk\nCamera: 0.02, 1.54, 17.84\nPlayer: 0.02, 0.85, 17.84\nGrounded: true\nPointer lock: false\nWalking: false\nNavigation: 待機\nTarget: 1.84, 12.91\nWaypoints: 0\nRoutes: 6 / Arrivals: 4\nLook: -0.071, 0.035\nRespawns: 3\nFrames: 8011\nDrone: -17.27, 13.45, 6.35\nAuto quality: 0\nRenderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)"
+    },
+    {
+      "test": "WASD補助移動",
+      "text": "FPS: 60\nFrame: 16.68 ms\nDraw calls: 298\nTriangles: 306397\nDPR: 1.00\nViewport: 1920 × 1080\nMode: walk\nCamera: 0.16, 1.54, 15.88\nPlayer: 0.16, 0.85, 15.88\nGrounded: true\nPointer lock: false\nWalking: true\nNavigation: 待機\nTarget: 1.84, 12.91\nWaypoints: 0\nRoutes: 6 / Arrivals: 4\nLook: -0.071, 0.035\nRespawns: 3\nFrames: 9300\nDrone: -17.74, 13.54, -19.99\nAuto quality: 0\nRenderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)"
+    },
+    {
+      "test": "落下復帰",
+      "text": "FPS: 60\nFrame: 16.67 ms\nDraw calls: 310\nTriangles: 310177\nDPR: 1.00\nViewport: 1920 × 1080\nMode: walk\nCamera: 0.00, 1.54, 18.00\nPlayer: 0.00, 0.85, 18.00\nGrounded: true\nPointer lock: false\nWalking: true\nNavigation: 待機\nTarget: 1.84, 12.91\nWaypoints: 0\nRoutes: 6 / Arrivals: 4\nLook: -0.071, 0.035\nRespawns: 4\nFrames: 9566\nDrone: -10.83, 12.30, -24.01\nAuto quality: 0\nRenderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)"
+    },
+    {
+      "test": "Orbit切替・回転",
+      "text": "FPS: 60\nFrame: 16.68 ms\nDraw calls: 471\nTriangles: 391329\nDPR: 1.00\nViewport: 1920 × 1080\nMode: orbit\nCamera: 33.29, 66.06, 124.66\nPlayer: 0.00, 0.85, 18.00\nGrounded: true\nPointer lock: false\nWalking: false\nNavigation: 待機\nTarget: 1.84, 12.91\nWaypoints: 0\nRoutes: 6 / Arrivals: 4\nLook: -0.071, 0.035\nRespawns: 4\nFrames: 10136\nDrone: 7.86, 9.79, -27.47\nAuto quality: 0\nRenderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)"
+    },
+    {
+      "test": "本番版クリック移動中",
+      "text": "FPS: 60\nFrame: 16.68 ms\nDraw calls: 212\nTriangles: 288171\nDPR: 1.00\nViewport: 1920 × 1080\nMode: walk\nCamera: -15.06, 1.54, -0.90\nPlayer: -15.06, 0.85, -0.90\nGrounded: true\nPointer lock: false\nWalking: true\nNavigation: 到着\nTarget: -15.13, -0.99\nWaypoints: 0\nRoutes: 1 / Arrivals: 1\nLook: 0.679, 0.035\nRespawns: 1\nFrames: 1696\nDrone: -1.98, 13.05, 12.66\nAuto quality: 0\nRenderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)"
+    },
+    {
+      "test": "本番版迂回到着",
+      "text": "FPS: 60\nFrame: 16.67 ms\nDraw calls: 201\nTriangles: 283611\nDPR: 1.00\nViewport: 1920 × 1080\nMode: walk\nCamera: -15.06, 1.54, -0.91\nPlayer: -15.06, 0.85, -0.91\nGrounded: true\nPointer lock: false\nWalking: true\nNavigation: 到着\nTarget: -15.13, -0.99\nWaypoints: 0\nRoutes: 1 / Arrivals: 1\nLook: 0.679, 0.035\nRespawns: 1\nFrames: 4274\nDrone: 4.98, 13.91, -27.44\nAuto quality: 0\nRenderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)"
+    },
+    {
+      "test": "本番版庭園橋の到着",
+      "text": "FPS: 60\nFrame: 16.68 ms\nDraw calls: 169\nTriangles: 269319\nDPR: 1.00\nViewport: 1920 × 1080\nMode: walk\nCamera: -21.62, 1.60, -6.73\nPlayer: -21.62, 0.91, -6.73\nGrounded: true\nPointer lock: false\nWalking: true\nNavigation: 到着\nTarget: -21.70, -6.81\nWaypoints: 0\nRoutes: 2 / Arrivals: 2\nLook: 0.679, 0.035\nRespawns: 1\nFrames: 7033\nDrone: 13.81, 9.32, 13.01\nAuto quality: 0\nRenderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)"
+    },
+    {
+      "test": "最終版・池を迂回する2区間の経路",
+      "text": "FPS: 60\nFrame: 16.67 ms\nDraw calls: 213\nTriangles: 288183\nDPR: 1.00\nViewport: 1920 × 1080\nMode: walk\nCamera: -15.06, 1.54, -0.91\nPlayer: -15.06, 0.85, -0.91\nGrounded: true\nPointer lock: false\nWalking: true\nFloor hit: -15.13, 0.00, -0.99\nNavigation: 到着\nTarget: -15.13, -0.99\nWaypoints: 0\nRoutes: 1 / Arrivals: 1\nLook: 0.679, 0.035\nRespawns: 1\nFrames: 1416\nDrone: 7.56, 14.18, 13.48\nAuto quality: 0\nRenderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)"
+    },
+    {
+      "test": "最終版・庭園の段差を斜面で越えて到着",
+      "text": "FPS: 60\nFrame: 16.67 ms\nDraw calls: 146\nTriangles: 219267\nDPR: 1.00\nViewport: 1920 × 1080\nMode: walk\nCamera: -33.66, 1.79, -11.92\nPlayer: -33.66, 1.10, -11.92\nGrounded: true\nPointer lock: false\nWalking: true\nFloor hit: -33.77, 0.26, -11.96\nNavigation: 到着\nTarget: -33.77, -11.96\nWaypoints: 0\nRoutes: 3 / Arrivals: 3\nLook: 1.189, 0.035\nRespawns: 1\nFrames: 6170\nDrone: 36.19, 10.22, 1.40\nAuto quality: 0\nRenderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)"
+    },
+    {
+      "test": "最終版の庭園到着・性能",
+      "text": "FPS: 60\nFrame: 16.67 ms\nDraw calls: 146\nTriangles: 219267\nDPR: 1.00\nViewport: 1920 × 1080\nMode: walk\nCamera: -33.66, 1.79, -11.92\nPlayer: -33.66, 1.10, -11.92\nGrounded: true\nPointer lock: false\nWalking: true\nFloor hit: -33.77, 0.26, -11.96\nNavigation: 到着\nTarget: -33.77, -11.96\nWaypoints: 0\nRoutes: 3 / Arrivals: 3\nLook: 1.189, 0.035\nRespawns: 1\nFrames: 9109\nDrone: -21.58, 14.30, -16.21\nAuto quality: 0\nRenderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)"
+    }
+  ],
+  "performanceBeforeFloorFix": "計測完了: 1920 × 1080\nQuality: balanced / DPR 1.00\n平均: 60.0 fps\np95: 17.40 ms\np99: 17.60 ms\n平均draw calls: 214\n平均triangles: 288736\nFrames: 600 / 10.00秒",
+  "performanceFinal": "計測完了: 1920 × 1080\nQuality: balanced / DPR 1.00\n平均: 60.0 fps\np95: 17.60 ms\np99: 17.70 ms\n平均draw calls: 146\n平均triangles: 219267\nFrames: 600 / 10.00秒",
+  "consoleErrors": [],
+  "visualCheck": "最終開発版で庭園へクリック移動・到着を再確認。案内板の重なりを解消した画像を確認。"
+}

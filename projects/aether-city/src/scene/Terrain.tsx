@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
 import { CylinderGeometry } from 'three'
-import { ISLANDS, BRIDGES, BRIDGE_FLOOR, bridgeTransform, type Vec3 } from '../lib/world'
+import { ISLANDS, BRIDGES, BRIDGE_FLOOR, GARDEN_RAMP, bridgeTransform, type Vec3 } from '../lib/world'
 import { Part, Batch, materials, type Instance } from './primitives'
 
 function Island({ position, radius, depth }: { position: Vec3; radius: number; depth: number }) {
@@ -52,6 +52,7 @@ function Bridge({ start, end, width }: { start: Vec3; end: Vec3; width: number }
 
 export function Terrain() {
   return <group>
+    <Part surface="stone" {...GARDEN_RAMP} receiveShadow />
     {ISLANDS.map((island) => <Island key={island.id} {...island} />)}
     {BRIDGES.map((bridge, i) => <Bridge key={i} {...bridge} />)}
   </group>

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { useWorld, startWalking } from '../state/world'
+import { useWorld } from '../state/world'
 import { Diagnostics } from './Diagnostics'
 import { VIEWS, telemetry, type View, type Quality, QUALITY, SEED } from '../lib/world'
 
@@ -39,14 +39,12 @@ function Settings({ close }: { close: () => void }) {
 export function Interface() {
   const mode = useWorld((s) => s.mode)
   const view = useWorld((s) => s.view)
-  const walkActive = useWorld((s) => s.walkActive)
+  const walkMessage = useWorld((s) => s.walkMessage)
   const walkReady = useWorld((s) => s.walkReady)
-  const dragLook = useWorld((s) => s.dragLook)
   const [settings, setSettings] = useState(false)
   const [help, setHelp] = useState(false)
   const [diagnostics, setDiagnostics] = useState(false)
   const [loaded, setLoaded] = useState(false)
-  const [locked, setLocked] = useState(false)
   const fps = useRef<HTMLSpanElement>(null!)
   const hour = useRef<HTMLSpanElement>(null!)
   const place = useRef<HTMLSpanElement>(null!)
@@ -64,9 +62,7 @@ export function Interface() {
       }
       if (telemetry.ready) setLoaded(true)
     }, 750)
-    const lock = () => setLocked(Boolean(document.pointerLockElement))
-    document.addEventListener('pointerlockchange', lock)
-    return () => { clearInterval(timer); document.removeEventListener('pointerlockchange', lock) }
+    return () => clearInterval(timer)
   }, [])
 
   return <div className={`interface ${mode}`}>
@@ -77,15 +73,14 @@ export function Interface() {
     <div className="north"><span>N</span><div className="north-line" /><span>↗</span></div>
     <div className="scene-caption"><span className="eyebrow"><i /> ABOVE THE CLOUDS</span><h1>Aether City<span className="title-period">.</span></h1><p>{VIEWS[view].short}</p><div className="caption-meta"><span>標高 2,400 m</span><i /><span ref={hour}>18:41</span><span className="meta-weather">晴れ、ときどき浮遊。</span></div></div>
     {settings && <Settings close={() => setSettings(false)} />}
-    {help && <aside className="help-panel" aria-label="操作ガイド"><div className="panel-heading">操作ガイド<button className="close-button" onClick={() => setHelp(false)} aria-label="ガイドを閉じる">×</button></div><p><b>Orbit / 鑑賞</b><br />ドラッグで回転・ホイールでズーム。右ドラッグで視点をずらせます。</p><p><b>Walk / 探索</b><br />画面をクリックして探索を開始。WASDで移動、マウスで視点変更。Shiftで加速、Spaceでジャンプ。</p><p>ESCでマウスを解放。Rまたは復帰ボタンで開始地点へ戻ります。橋を渡って3つの島を訪れてみてください。</p><span className="help-seed">世界のSeed: {SEED}</span></aside>}
+    {help && <aside className="help-panel" aria-label="操作ガイド"><div className="panel-heading">操作ガイド<button className="close-button" onClick={() => setHelp(false)} aria-label="ガイドを閉じる">×</button></div><p><b>Orbit / 鑑賞</b><br />ドラッグで回転・ホイールでズーム。右ドラッグで視点をずらせます。</p><p><b>Walk / 探索</b><br />道路・広場・橋の床をクリックすると、障害物を避けて移動します。ドラッグで景色をつかむように見回せます。WASDも使用でき、Shiftで加速、Spaceでジャンプ。</p><p>ESCで移動を停止。Rまたは復帰ボタンで開始地点へ戻ります。橋を渡って3つの島を訪れてみてください。</p><span className="help-seed">世界のSeed: {SEED}</span></aside>}
     <div className="view-picker" aria-label="視点を選ぶ">{(Object.keys(VIEWS) as View[]).map((key, index) => <button key={key} className={`view-card ${view === key ? 'selected' : ''}`} onClick={() => useWorld.getState().setView(key)} aria-pressed={view === key}><span className="view-number">0{index + 1}</span><span>{VIEWS[key].label}</span><span className="view-arrow">↗</span></button>)}</div>
     {diagnostics && <Diagnostics close={() => setDiagnostics(false)} />}
     {mode === 'walk' && !walkReady && <div className="walk-loading">探索の準備をしています…</div>}
-    {mode === 'walk' && walkReady && !walkActive && loaded && <button className="enter-walk" onClick={startWalking}>クリックして、街を歩く <Icon name="arrow" /><span>WASDで移動 · ESCで操作を解除</span></button>}
-    {mode === 'walk' && walkActive && <><div className="crosshair" /><div className="walk-location"><i /><span ref={place}>セントラル・スパイア</span>{dragLook && <span className="drag-note">ドラッグで視点変更 · ESCで解除</span>}</div></>}
+    {mode === 'walk' && walkReady && <><div className="walk-location"><i /><span ref={place}>セントラル・スパイア</span></div><div className="walk-notice" role="status"><span>{walkMessage}</span><small>ドラッグで見回す · WASDでも移動 · Rで復帰</small></div></>}
     <footer className="bottom-bar">
       <div className="mode-controls"><button className={`mode-button ${mode === 'orbit' ? 'selected' : ''}`} onClick={() => useWorld.getState().setMode('orbit')} aria-pressed={mode === 'orbit'}><Icon name="orbit" /><span>Orbit <small>鑑賞</small></span></button><button className={`mode-button ${mode === 'walk' ? 'selected' : ''}`} onClick={() => useWorld.getState().setMode('walk')} aria-pressed={mode === 'walk'}><Icon name="walk" /><span>Walk <small>探索</small></span></button><span className="control-divider" /><button className="icon-button" aria-label="カメラをリセット・復帰" title="カメラをリセット・復帰" onClick={() => useWorld.getState().reset()}><Icon name="reset" /></button></div>
-      <div className="bottom-guide"><span>{mode === 'orbit' ? 'ドラッグで回転' : 'WASDで移動'}<i />{mode === 'orbit' ? 'スクロールでズーム' : 'Shift 加速 / Space ジャンプ'}</span><button className="info-button" onClick={() => setDiagnostics(!diagnostics)} aria-label="描画情報を表示" aria-expanded={diagnostics}>描画情報</button><button className="help-button" onClick={() => setHelp(!help)} aria-label="操作ガイドを表示" aria-expanded={help}>?</button></div>
+      <div className="bottom-guide"><span>{mode === 'orbit' ? 'ドラッグで回転' : '床をクリックして移動'}<i />{mode === 'orbit' ? 'スクロールでズーム' : 'ドラッグで見回す'}</span><button className="info-button" onClick={() => setDiagnostics(!diagnostics)} aria-label="描画情報を表示" aria-expanded={diagnostics}>描画情報</button><button className="help-button" onClick={() => setHelp(!help)} aria-label="操作ガイドを表示" aria-expanded={help}>?</button></div>
     </footer>
     {!loaded && <div className="loading-screen"><div className="loading-orbit" /><span>雲の上へ、まもなく。</span><small>世界を描いています</small></div>}
   </div>
