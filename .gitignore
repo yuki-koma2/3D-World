@@ -1,0 +1,16 @@
+**/node_modules/
+**/dist/
+**/tmp/
+**/logs/
+**/outputs/playwright/.sessions/
+**/outputs/playwright/console-*.log
+**/outputs/playwright/page-*.yml
+**/outputs/playwright/phase-*
+**/outputs/playwright/*-review.jpg
+**/.playwright/
+**/.playwright-cli/
+**/*.tsbuildinfo
+.DS_Store
+.env
+.env.*
+!.env.example

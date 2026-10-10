@@ -1,0 +1,193 @@
+{
+  "environment": "Codex internal browser / Playwright and native canvas input",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "checks": [
+    {
+      "test": "orbit initial",
+      "result": "FPS: 60\nFrame: 16.65 ms\nDraw calls: 471\nTriangles: 391329\nDPR: 1.00\nViewport: 1920 × 1080\nMode: orbit\nCamera: 89.00, 49.00, 104.00\nPlayer: 0.00, 0.00, 0.00\nGrounded: false\nPointer lock: false\nWalking: false\nRespawns: 0\nFrames: 1073\nDrone: -20.61, 9.90, -17.35\nAuto quality: 0\nRenderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)"
+    },
+    {
+      "test": "orbit drag",
+      "result": "FPS: 60\nFrame: 16.65 ms\nDraw calls: 471\nTriangles: 391329\nDPR: 1.00\nViewport: 1920 × 1080\nMode: orbit\nCamera: 89.00, 49.00, 104.00\nPlayer: 0.00, 0.00, 0.00\nGrounded: false\nPointer lock: false\nWalking: false\nRespawns: 0\nFrames: 1073\nDrone: -20.61, 9.90, -17.35\nAuto quality: 0\nRenderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)"
+    },
+    {
+      "test": "orbit drag settled",
+      "result": "FPS: 60\nFrame: 16.64 ms\nDraw calls: 471\nTriangles: 391329\nDPR: 1.00\nViewport: 1920 × 1080\nMode: orbit\nCamera: 12.39, 74.33, 124.51\nPlayer: 0.00, 0.00, 0.00\nGrounded: false\nPointer lock: false\nWalking: false\nRespawns: 0\nFrames: 1373\nDrone: -14.00, 11.15, -22.45\nAuto quality: 0\nRenderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)"
+    },
+    {
+      "test": "orbit zoom settled",
+      "result": "FPS: 60\nFrame: 16.67 ms\nDraw calls: 471\nTriangles: 391329\nDPR: 1.00\nViewport: 1920 × 1080\nMode: orbit\nCamera: 11.97, 71.94, 119.10\nPlayer: 0.00, 0.00, 0.00\nGrounded: false\nPointer lock: false\nWalking: false\nRespawns: 0\nFrames: 1943\nDrone: 3.87, 13.79, -27.38\nAuto quality: 0\nRenderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)"
+    },
+    {
+      "test": "walk spawn",
+      "result": "FPS: 60\nFrame: 16.67 ms\nDraw calls: 316\nTriangles: 312973\nDPR: 1.00\nViewport: 1920 × 1080\nMode: walk\nCamera: 0.00, 1.54, 18.00\nPlayer: 0.00, 0.85, 18.00\nGrounded: true\nPointer lock: false\nWalking: true\nRespawns: 1\nFrames: 2393\nDrone: 19.16, 14.94, -25.94\nAuto quality: 0\nRenderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)"
+    },
+    {
+      "test": "walk W 1.7s",
+      "result": "FPS: 60\nFrame: 16.68 ms\nDraw calls: 273\nTriangles: 291111\nDPR: 1.00\nViewport: 1920 × 1080\nMode: walk\nCamera: 0.48, 1.54, 11.24\nPlayer: 0.48, 0.85, 11.23\nGrounded: true\nPointer lock: false\nWalking: true\nRespawns: 1\nFrames: 2513\nDrone: 22.89, 15.00, -24.77\nAuto quality: 0\nRenderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)"
+    },
+    {
+      "test": "walk sprint wall stop",
+      "result": "FPS: 60\nFrame: 16.67 ms\nDraw calls: 218\nTriangles: 274375\nDPR: 1.00\nViewport: 1920 × 1080\nMode: walk\nCamera: 1.21, 1.54, 1.10\nPlayer: 1.21, 0.85, 1.10\nGrounded: true\nPointer lock: false\nWalking: true\nRespawns: 1\nFrames: 2633\nDrone: 26.36, 14.95, -23.31\nAuto quality: 0\nRenderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)"
+    },
+    {
+      "test": "jump",
+      "result": "FPS: 60\nFrame: 16.68 ms\nDraw calls: 315\nTriangles: 312781\nDPR: 1.00\nViewport: 1920 × 1080\nMode: walk\nCamera: 0.00, 2.77, 18.00\nPlayer: 0.00, 2.04, 18.00\nGrounded: false\nPointer lock: false\nWalking: true\nRespawns: 2\nFrames: 2962\nDrone: 34.04, 14.25, -17.95\nAuto quality: 0\nRenderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)"
+    },
+    {
+      "test": "ESC stops walking",
+      "result": "FPS: 60\nFrame: 16.68 ms\nDraw calls: 316\nTriangles: 312973\nDPR: 1.00\nViewport: 1920 × 1080\nMode: walk\nCamera: 0.00, 1.54, 18.00\nPlayer: 0.00, 0.85, 18.00\nGrounded: true\nPointer lock: false\nWalking: false\nRespawns: 2\nFrames: 3052\nDrone: 35.58, 13.93, -16.22\nAuto quality: 0\nRenderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)"
+    },
+    {
+      "test": "fall recovery settled",
+      "result": "FPS: 60\nFrame: 16.67 ms\nDraw calls: 317\nTriangles: 313837\nDPR: 1.00\nViewport: 1920 × 1080\nMode: walk\nCamera: 0.00, 1.54, 18.00\nPlayer: 0.00, 0.85, 18.00\nGrounded: true\nPointer lock: false\nWalking: true\nRespawns: 3\nFrames: 4252\nDrone: 28.51, 9.15, 8.17\nAuto quality: 0\nRenderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)"
+    },
+    {
+      "test": "drag look then W",
+      "result": "FPS: 60\nFrame: 16.67 ms\nDraw calls: 282\nTriangles: 299109\nDPR: 1.00\nViewport: 1920 × 1080\nMode: walk\nCamera: 2.21, 1.54, 14.70\nPlayer: 2.29, 0.85, 14.59\nGrounded: true\nPointer lock: false\nWalking: true\nRespawns: 3\nFrames: 4342\nDrone: 26.10, 9.05, 9.43\nAuto quality: 0\nRenderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)"
+    },
+    {
+      "test": "terrace walk spawn",
+      "result": "FPS: 60\nFrame: 16.67 ms\nDraw calls: 448\nTriangles: 383305\nDPR: 1.00\nViewport: 1920 × 1080\nMode: walk\nCamera: 51.00, 1.54, 11.00\nPlayer: 51.00, 0.85, 11.00\nGrounded: true\nPointer lock: false\nWalking: true\nRespawns: 4\nFrames: 5721\nDrone: -17.15, 13.43, 6.44\nAuto quality: 0\nRenderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)"
+    },
+    {
+      "test": "terrace to bridge entrance",
+      "result": "FPS: 60\nFrame: 16.67 ms\nDraw calls: 427\nTriangles: 376487\nDPR: 1.00\nViewport: 1920 × 1080\nMode: walk\nCamera: 42.52, 1.54, 7.37\nPlayer: 42.46, 0.85, 7.34\nGrounded: true\nPointer lock: false\nWalking: true\nRespawns: 4\nFrames: 5871\nDrone: -20.23, 14.03, 3.76\nAuto quality: 0\nRenderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)"
+    },
+    {
+      "test": "bridge entry after height fix",
+      "result": "FPS: 60\nFrame: 16.67 ms\nDraw calls: 418\nTriangles: 372631\nDPR: 1.00\nViewport: 1920 × 1080\nMode: walk\nCamera: 40.77, 1.60, 6.60\nPlayer: 40.77, 0.91, 6.60\nGrounded: true\nPointer lock: false\nWalking: true\nRespawns: 1\nFrames: 2577\nDrone: -11.30, 11.62, 9.80\nAuto quality: 0\nRenderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)"
+    },
+    {
+      "test": "bridge crossed to main island",
+      "result": "FPS: 60\nFrame: 16.67 ms\nDraw calls: 346\nTriangles: 338077\nDPR: 1.00\nViewport: 1920 × 1080\nMode: walk\nCamera: 19.71, 1.60, 2.70\nPlayer: 19.71, 0.91, 2.70\nGrounded: true\nPointer lock: false\nWalking: true\nRespawns: 1\nFrames: 2937\nDrone: -19.91, 10.04, 4.08\nAuto quality: 0\nRenderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)"
+    },
+    {
+      "test": "night light2 fog0 qualityLow",
+      "result": "- main:\n  - link \"Aether City ホーム\":\n    - /url: ./\n    - text: AETHER\n    - generic: WORLD / 001\n  - generic: LIVE WORLD\n  - generic: 60 FPS\n  - button \"世界を調整\" [expanded]:\n  - generic: \"N\"\n  - generic: ↗\n  - generic: ABOVE THE CLOUDS\n  - heading \"Aether City.\" [level=1]\n  - paragraph: 雲の上の、もうひとつの世界。\n  - generic: 標高 2,400 m\n  - generic: 18:41\n  - generic: 晴れ、ときどき浮遊。\n  - complementary \"世界の設定\":\n    - generic: 世界を調整\n    - button \"設定を閉じる\": ×\n    - generic: 時間帯\n    - generic: 夜\n    - slider \"時間帯 夜\": \"1\"\n    - generic: 夕暮れ\n    - generic: 夜\n    - button \"夕暮れから夜へ\"\n    - generic: 光の強さ\n    - generic: \"2.0\"\n    - slider \"光の強さ 2.0\": \"2\"\n    - generic: 霧の深さ\n    - generic: 0%\n    - slider \"霧の深さ 0%\" [active]: \"0\"\n    - generic: 描画品質\n    - combobox \"描画品質\":\n      - option \"軽量\" [selected]\n      - option \"バランス\"\n      - option \"高品質\"\n    - checkbox \"負荷に合わせて解像度を調整\" [checked]\n    - text: 負荷に合わせて解像度を調整\n    - text: 空と照明は、同じ時間を刻みます。\n    - text: 気になる場所で、少し立ち止まってみてください。\n  - generic \"視点を選ぶ\":\n    - button \"01 都市全景 ↗\" [pressed]:\n      - generic: \"01\"\n      - generic: 都市全景\n      - generic: ↗\n    - button \"02 セントラル・スパイア ↗\":\n      - generic: \"02\"\n      - generic: セントラル・スパイア\n      - generic: ↗\n    - button \"03 スカイテラス ↗\":\n      - generic: \"03\"\n      - generic: スカイテラス\n      - generic: ↗\n  - button \"Orbit 鑑賞\" [pressed]:\n    - generic: Orbit 鑑賞\n  - button \"Walk 探索\":\n    - generic: Walk 探索\n  - button \"カメラをリセット・復帰\":\n  - text: ドラッグで回転\n  - text: スクロールでズーム\n  - button \"描画情報を表示\": 描画情報\n  - button \"操作ガイドを表示\": \"?\""
+    },
+    {
+      "test": "time flow started",
+      "result": "- main:\n  - link \"Aether City ホーム\":\n    - /url: ./\n    - text: AETHER\n    - generic: WORLD / 001\n  - generic: LIVE WORLD\n  - generic: 60 FPS\n  - button \"世界を調整\" [expanded]:\n  - generic: \"N\"\n  - generic: ↗\n  - generic: ABOVE THE CLOUDS\n  - heading \"Aether City.\" [level=1]\n  - paragraph: 雲の上の、もうひとつの世界。\n  - generic: 標高 2,400 m\n  - generic: 18:00\n  - generic: 晴れ、ときどき浮遊。\n  - complementary \"世界の設定\":\n    - generic: 世界を調整\n    - button \"設定を閉じる\": ×\n    - generic: 時間帯\n    - generic: 夕暮れ\n    - slider \"時間帯 夕暮れ\": \"0\"\n    - generic: 夕暮れ\n    - generic: 夜\n    - button \"時間の流れを止める\" [active]\n    - generic: 光の強さ\n    - generic: \"1.0\"\n    - slider \"光の強さ 1.0\": \"1\"\n    - generic: 霧の深さ\n    - generic: 42%\n    - slider \"霧の深さ 42%\": \"0.42\"\n    - generic: 描画品質\n    - combobox \"描画品質\":\n      - option \"軽量\"\n      - option \"バランス\"\n      - option \"高品質\" [selected]\n    - checkbox \"負荷に合わせて解像度を調整\" [checked]\n    - text: 負荷に合わせて解像度を調整\n    - text: 空と照明は、同じ時間を刻みます。\n    - text: 気になる場所で、少し立ち止まってみてください。\n  - generic \"視点を選ぶ\":\n    - button \"01 都市全景 ↗\" [pressed]:\n      - generic: \"01\"\n      - generic: 都市全景\n      - generic: ↗\n    - button \"02 セントラル・スパイア ↗\":\n      - generic: \"02\"\n      - generic: セントラル・スパイア\n      - generic: ↗\n    - button \"03 スカイテラス ↗\":\n      - generic: \"03\"\n      - generic: スカイテラス\n      - generic: ↗\n  - button \"Orbit 鑑賞\" [pressed]:\n    - generic: Orbit 鑑賞\n  - button \"Walk 探索\":\n    - generic: Walk 探索\n  - button \"カメラをリセット・復帰\":\n  - text: ドラッグで回転\n  - text: スクロールでズーム\n  - button \"描画情報を表示\": 描画情報\n  - button \"操作ガイドを表示\": \"?\""
+    },
+    {
+      "test": "time flow advanced",
+      "result": "- main:\n  - link \"Aether City ホーム\":\n    - /url: ./\n    - text: AETHER\n    - generic: WORLD / 001\n  - generic: LIVE WORLD\n  - generic: 60 FPS\n  - button \"世界を調整\" [expanded]:\n  - generic: \"N\"\n  - generic: ↗\n  - generic: ABOVE THE CLOUDS\n  - heading \"Aether City.\" [level=1]\n  - paragraph: 雲の上の、もうひとつの世界。\n  - generic: 標高 2,400 m\n  - generic: 18:35\n  - generic: 晴れ、ときどき浮遊。\n  - complementary \"世界の設定\":\n    - generic: 世界を調整\n    - button \"設定を閉じる\": ×\n    - generic: 時間帯\n    - generic: 夕暮れ\n    - slider \"時間帯 夕暮れ\": \"0.2\"\n    - generic: 夕暮れ\n    - generic: 夜\n    - button \"時間の流れを止める\" [active]\n    - generic: 光の強さ\n    - generic: \"1.0\"\n    - slider \"光の強さ 1.0\": \"1\"\n    - generic: 霧の深さ\n    - generic: 42%\n    - slider \"霧の深さ 42%\": \"0.42\"\n    - generic: 描画品質\n    - combobox \"描画品質\":\n      - option \"軽量\"\n      - option \"バランス\"\n      - option \"高品質\" [selected]\n    - checkbox \"負荷に合わせて解像度を調整\" [checked]\n    - text: 負荷に合わせて解像度を調整\n    - text: 空と照明は、同じ時間を刻みます。\n    - text: 気になる場所で、少し立ち止まってみてください。\n  - generic \"視点を選ぶ\":\n    - button \"01 都市全景 ↗\" [pressed]:\n      - generic: \"01\"\n      - generic: 都市全景\n      - generic: ↗\n    - button \"02 セントラル・スパイア ↗\":\n      - generic: \"02\"\n      - generic: セントラル・スパイア\n      - generic: ↗\n    - button \"03 スカイテラス ↗\":\n      - generic: \"03\"\n      - generic: スカイテラス\n      - generic: ↗\n  - button \"Orbit 鑑賞\" [pressed]:\n    - generic: Orbit 鑑賞\n  - button \"Walk 探索\":\n    - generic: Walk 探索\n  - button \"カメラをリセット・復帰\":\n  - text: ドラッグで回転\n  - text: スクロールでズーム\n  - button \"描画情報を表示\": 描画情報\n  - button \"操作ガイドを表示\": \"?\""
+    },
+    {
+      "test": "production initial render",
+      "result": "FPS: 60\nFrame: 16.67 ms\nDraw calls: 471\nTriangles: 391329\nDPR: 1.00\nViewport: 1920 × 1080\nMode: orbit\nCamera: 89.00, 49.00, 104.00\nPlayer: 0.00, 0.00, 0.00\nGrounded: false\nPointer lock: false\nWalking: false\nRespawns: 0\nFrames: 527\nDrone: 33.79, 14.29, 4.20\nAuto quality: 0\nRenderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)"
+    },
+    {
+      "test": "production Walk",
+      "result": "FPS: 60\nFrame: 16.67 ms\nDraw calls: 287\nTriangles: 298303\nDPR: 1.00\nViewport: 1920 × 1080\nMode: walk\nCamera: 0.34, 1.54, 13.22\nPlayer: 0.34, 0.85, 13.22\nGrounded: true\nPointer lock: false\nWalking: true\nRespawns: 1\nFrames: 16891\nDrone: 34.61, 14.14, -17.35\nAuto quality: 0\nRenderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)"
+    }
+  ],
+  "performance": [
+    {
+      "build": "production",
+      "preset": "balanced",
+      "result": "計測完了: 1920 × 1080\nQuality: balanced / DPR 1.00\n平均: 60.0 fps\np95: 18.40 ms\np99: 18.70 ms\n平均draw calls: 471\n平均triangles: 391329\nFrames: 600 / 10.00秒",
+      "width": 1920,
+      "height": 1080,
+      "dpr": 1,
+      "averageFps": 60,
+      "p95Ms": 18.4,
+      "p99Ms": 18.7,
+      "drawCalls": 471,
+      "triangles": 391329
+    },
+    {
+      "build": "production",
+      "preset": "high",
+      "result": "計測完了: 1920 × 1080\nQuality: high / DPR 1.00\n平均: 60.0 fps\np95: 18.30 ms\np99: 18.60 ms\n平均draw calls: 471\n平均triangles: 419489\nFrames: 600 / 10.00秒",
+      "width": 1920,
+      "height": 1080,
+      "dpr": 1,
+      "averageFps": 60,
+      "p95Ms": 18.3,
+      "p99Ms": 18.6,
+      "drawCalls": 471,
+      "triangles": 419489
+    },
+    {
+      "build": "production",
+      "preset": "low",
+      "result": "計測完了: 1920 × 1080\nQuality: low / DPR 0.85\n平均: 60.0 fps\np95: 18.20 ms\np99: 18.60 ms\n平均draw calls: 403\n平均triangles: 312012\nFrames: 600 / 10.00秒",
+      "width": 1920,
+      "height": 1080,
+      "dpr": 0.85,
+      "averageFps": 60,
+      "p95Ms": 18.2,
+      "p99Ms": 18.6,
+      "drawCalls": 403,
+      "triangles": 312012
+    }
+  ],
+  "consoleErrors": [],
+  "warnings": [
+    {
+      "level": "warn",
+      "message": "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.",
+      "timestamp": "2026-10-10T06:29:06.789Z",
+      "url": "http://127.0.0.1:5173/@vite/client"
+    },
+    {
+      "level": "warn",
+      "message": "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.",
+      "timestamp": "2026-10-10T06:36:24.511Z",
+      "url": "http://127.0.0.1:5173/@vite/client"
+    },
+    {
+      "level": "warn",
+      "message": "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.",
+      "timestamp": "2026-10-10T06:40:12.999Z",
+      "url": "http://127.0.0.1:5173/@vite/client"
+    },
+    {
+      "level": "warn",
+      "message": "using deprecated parameters for the initialization function; pass a single object instead",
+      "timestamp": "2026-10-10T06:41:24.612Z",
+      "url": "http://127.0.0.1:5173/@vite/client"
+    },
+    {
+      "level": "warn",
+      "message": "THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead.",
+      "timestamp": "2026-10-10T06:44:33.587Z",
+      "url": "http://127.0.0.1:5173/@vite/client"
+    },
+    {
+      "level": "warn",
+      "message": "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.",
+      "timestamp": "2026-10-10T06:45:19.073Z",
+      "url": "http://127.0.0.1:4173/assets/index-DYyShwjj.js"
+    },
+    {
+      "level": "warn",
+      "message": "THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead.",
+      "timestamp": "2026-10-10T06:49:56.872Z",
+      "url": "http://127.0.0.1:4173/assets/index-DYyShwjj.js"
+    },
+    {
+      "level": "warn",
+      "message": "using deprecated parameters for the initialization function; pass a single object instead",
+      "timestamp": "2026-10-10T06:49:57.956Z",
+      "url": "http://127.0.0.1:4173/assets/rapier-wasm-DYWDextv.js"
+    }
+  ],
+  "finalAcceptance": {
+    "started": "2026-10-10T06:51:36.682Z",
+    "benchmark": "計測完了: 1920 × 1080\nQuality: balanced / DPR 1.00\n平均: 60.0 fps\np95: 19.30 ms\np99: 22.20 ms\n平均draw calls: 471\n平均triangles: 391329\nFrames: 600 / 10.00秒",
+    "logs": [
+      {
+        "level": "warn",
+        "message": "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.",
+        "timestamp": "2026-10-10T06:51:37.017Z",
+        "url": "http://127.0.0.1:4173/assets/index-CDDp5B0g.js"
+      }
+    ]
+  }
+}

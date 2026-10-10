@@ -1,0 +1,10 @@
+{
+  "browser": {
+    "browserName": "chromium",
+    "launchOptions": { "channel": "chrome", "headless": false },
+    "contextOptions": { "viewport": { "width": 1920, "height": 1080 }, "deviceScaleFactor": 1 },
+    "userDataDir": "./tmp/browser/profile"
+  },
+  "outputDir": "./outputs/playwright",
+  "saveSession": false
+}

@@ -1,0 +1,51 @@
+{
+  "viewport": [
+    1920,
+    1080
+  ],
+  "renderer": "Apple M3 Pro / ANGLE Metal",
+  "scene": "city overview / time0.23 / production",
+  "durationSeconds": 10,
+  "results": [
+    {
+      "build": "production",
+      "preset": "balanced",
+      "result": "計測完了: 1920 × 1080\nQuality: balanced / DPR 1.00\n平均: 60.0 fps\np95: 18.40 ms\np99: 18.70 ms\n平均draw calls: 471\n平均triangles: 391329\nFrames: 600 / 10.00秒",
+      "width": 1920,
+      "height": 1080,
+      "dpr": 1,
+      "averageFps": 60,
+      "p95Ms": 18.4,
+      "p99Ms": 18.7,
+      "drawCalls": 471,
+      "triangles": 391329
+    },
+    {
+      "build": "production",
+      "preset": "high",
+      "result": "計測完了: 1920 × 1080\nQuality: high / DPR 1.00\n平均: 60.0 fps\np95: 18.30 ms\np99: 18.60 ms\n平均draw calls: 471\n平均triangles: 419489\nFrames: 600 / 10.00秒",
+      "width": 1920,
+      "height": 1080,
+      "dpr": 1,
+      "averageFps": 60,
+      "p95Ms": 18.3,
+      "p99Ms": 18.6,
+      "drawCalls": 471,
+      "triangles": 419489
+    },
+    {
+      "build": "production",
+      "preset": "low",
+      "result": "計測完了: 1920 × 1080\nQuality: low / DPR 0.85\n平均: 60.0 fps\np95: 18.20 ms\np99: 18.60 ms\n平均draw calls: 403\n平均triangles: 312012\nFrames: 600 / 10.00秒",
+      "width": 1920,
+      "height": 1080,
+      "dpr": 0.85,
+      "averageFps": 60,
+      "p95Ms": 18.2,
+      "p99Ms": 18.6,
+      "drawCalls": 403,
+      "triangles": 312012
+    }
+  ],
+  "finalBuildCheck": "計測完了: 1920 × 1080\nQuality: balanced / DPR 1.00\n平均: 60.0 fps\np95: 19.30 ms\np99: 22.20 ms\n平均draw calls: 471\n平均triangles: 391329\nFrames: 600 / 10.00秒"
+}
